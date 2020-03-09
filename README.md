@@ -6,4 +6,4 @@
   {Preprocessed and labelled version of the SotM34 dataset}
 
 
-# Content will be filled later
+# Content will be updated when the research is published.
