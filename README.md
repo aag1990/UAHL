@@ -25,8 +25,8 @@ BibTeX entry:
     volume      = {TextHere},  
     number      = {TextHere},  
     author      = {TextHere},  
-    journal     = {TextHere}   -->
-}
+    journal     = {TextHere}   
+}-->
 
 **Code Developer:** Ahmed Abdulrahman Alghamdi  
 **For queries about the framework, reach out to me at one of the following places:**
