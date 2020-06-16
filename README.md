@@ -11,7 +11,8 @@ As aforementioned, the framework is part of an academic study made by <a href="h
 > A. Alghamdi and G. Reger, "Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning", in *IEEE Cyber Science*, 2020.
 
 BibTeX entry:
-> @article{WILL BE UPDATED WHEN THE PAPER PUBLISHED,  
+> WILL BE UPDATED WHEN THE PAPER PUBLISHED
+<!-- @article{WILL BE UPDATED WHEN THE PAPER PUBLISHED,  
     title       = {Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning},  
     author      = {A Alghamdi, Ahmed and Reger, Giles},  
     doi         = {WILL BE UPDATED WHEN THE PAPER PUBLISHED},  
@@ -20,7 +21,7 @@ BibTeX entry:
     month       = {June},  
     pages       = {8},  
     organization={IEEE},  
-    <!-- publisher   = {TextHere},  
+    publisher   = {TextHere},  
     volume      = {TextHere},  
     number      = {TextHere},  
     author      = {TextHere},  
