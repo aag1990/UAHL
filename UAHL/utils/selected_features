@@ -1,0 +1,36 @@
+{
+
+# Selected features for the log-files in Phase1:
+    'http_access_log' : ['HTTP_method', 'ClientRequestLine@', 'StatusCode', 'ObjectSize~', 'Referrer~', 'Agent@'],
+    'http_error_log':   ['Type', 'Reason_Phrase', 'Message@'],
+    'http_ssl_error' :  ['Type', 'Message@'],
+    'syslog_messages' : ['Logging_Daemon', 'Operation@', 'Tty', 'System_message@', 'EUID'],
+    'syslog_secure' :   ['Logging_Daemon', 'Operation'],
+    'syslog_maillog' :  ['Logging_Daemon', 'Class', 'nrcpts', 'Ruleset', 'delay@', 'xdelay@', 'mailer', 'dsn@', 'stat@'],
+    'snortsyslog' :     ['Rule@', 'Classification~', 'Priority~', 'Protocol','RuleNumber@'],
+
+# Selected features for the CCL in Phase2:
+	'Phase2_SelectedFeatures':	['DateTime~', 'PID', 'User~', 'phase1_predicted_label~', 'FileName'],
+
+
+### DO NOT CHANGE THE VALUES BELOW THIS LINE ###
+
+  # Labelling guide for Phase1:
+    'labelling_http_access_log':  'A',
+    'labelling_http_error_log':   'B',
+    'labelling_http_ssl_error':   'C',
+    'labelling_syslog_messages':  'D',
+    'labelling_syslog_secure':    'E',
+    'labelling_syslog_maillog':   'F',
+    'labelling_snortsyslog':      'G',
+
+  # Features' names to be changed for the CCL in Phase2:
+    'Res_http_access_log':  {'ClientIP$': 'SrcIP$', 'ClientRequestLine@':'Message'},
+    'Res_http_error_log':   {'ClientIP$': 'SrcIP$', 'Reason_Phrase':'Message', 'Message@':'Message2'},
+    'Res_http_ssl_error':   {},
+    'Res_syslog_messages':  {'Operation@':'Message', 'System_message@':'Message2', 'PID~':'PID', 'Logging_device~':'LoggingDevice', 'User': 'User~'},
+    'Res_syslog_secure':    {'Source$': 'SrcIP$', 'Port~': 'SrcPort', 'Operation':'Message', 'PID~':'PID', 'Logging_device~':'LoggingDevice', 'User': 'User~'},
+    'Res_syslog_maillog':   {'stat@':'Message', 'Logging_device~':'LoggingDevice'},
+    'Res_snortsyslog':      {'Classification~':'Message', 'Rule@':'Message2', 'RuleNnumber~':'PID', 'Logging_device~':'LoggingDevice', 'RuleNumber~':'RuleNumber'},
+
+}
