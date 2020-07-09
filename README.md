@@ -11,7 +11,7 @@ As aforementioned, the framework is part of an academic study made by <a href="h
 > A. Alghamdi and G. Reger, "Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning", in *IEEE Cyber Science*, 2020.
 
 BibTeX entry:
-> WILL BE UPDATED WHEN THE PAPER PUBLISHED
+> WILL BE UPDATED WHEN THE PAPER IS PUBLISHED ON IEEE XPLORE
 <!-- @article{WILL BE UPDATED WHEN THE PAPER PUBLISHED,  
     title       = {Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning},  
     author      = {A Alghamdi, Ahmed and Reger, Giles},  
@@ -40,10 +40,10 @@ BibTeX entry:
 - The file <a href="./Analysis_reports/Incidents_Description.txt" target="_blank">`Analysis_reports/Incidents_Description.txt`</a> contains details of suspected incidents exist in the SotM34 dataset. The file includes sources and descriptions of each incident (associated IP address, incident types, entries location, numbers of the entries, status codes, and other notes).
 
 ---
-## Research Presentation
-The project was presented at the IEEE Cyber Science 2020 conference. You may watch the presentation by clicking on below image. 
-[![Watch the video](/Docs/imgs/PresentationSC.png)](https://www.youtube.com/watch?v=g58rSpopTsU)
 
+## Research Presentation
+The project was presented at the IEEE Cyber Science 2020 conference. You may watch the presentation by clicking on the below image.
+[![Watch the video](/Docs/imgs/PresentationSC.png)](https://www.youtube.com/watch?v=g58rSpopTsU)
 
 ---
 
