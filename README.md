@@ -40,6 +40,12 @@ BibTeX entry:
 - The file <a href="./Analysis_reports/Incidents_Description.txt" target="_blank">`Analysis_reports/Incidents_Description.txt`</a> contains details of suspected incidents exist in the SotM34 dataset. The file includes sources and descriptions of each incident (associated IP address, incident types, entries location, numbers of the entries, status codes, and other notes).
 
 ---
+## Research Presentation
+The project was presented at the IEEE Cyber Science 2020 conference. You may watch the presentation by clicking on below image. 
+[![Watch the video](/Docs/imgs/PresentationSC.png)](https://www.youtube.com/watch?v=g58rSpopTsU)
+
+
+---
 
 ## Dependencies
   - **Required packages:** Numpy, Scipy, Pandas, Matplotlib, Sklearn, <a href="https://pypi.org/project/PrettyTable/" target="_blank">`Prettytable`</a>
