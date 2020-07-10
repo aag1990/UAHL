@@ -1,3 +1,14 @@
+'''
+    | ============================================================================= |
+    | - UAHL {Unsupervised Analysis Framework for Heterogenous Log-Files}           |
+    | - Code Developer: Ahmed Abdulrahman Alghamdi                                  |
+    | - The framework is available at: https://github.com/aag1990/UAHL              |
+    |   (Visit the GitHub repository for the documentation and other details)       |
+    | - When using any part of this framework for research or industrial            |
+    |    purposes. Please cite our paper which is shown in the GitHub repository.   |
+    | - Date: 25 Apr 2020                                                           |
+    | ============================================================================= |
+'''
 import os, sys, re, warnings, csv, re
 import numpy as np
 import pandas as pd
