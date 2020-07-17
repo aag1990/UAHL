@@ -4,29 +4,17 @@
 We have decided to make the source code and the dataset available for other researchers to allow the replicability and to help others understanding our approach of analysing the heterogeneous log-files.
 As aforementioned, the framework is part of an academic study made by <a href="http://twitter.com/cestrumn" target="_blank">`Ahmed A. Alghamdi`</a> and <a href="http://www.cs.man.ac.uk/~regerg/" target="_blank">`Giles Reger`</a>. Thus, if you are using our source code or the labelled version of the dataset in a scientific paper, please, cite our published paper:
 
-<!-- The paper citation needs to be re-checked later -->
-<!-- ### <a name="OurPaper"></a> -->
 ### <a name="OurPaper"></a>
-<!-- [THIS LINE TO UPDATED WHEN THE PAPER IS SHOWN IN IEEE XPLORE] -->
-> A. Alghamdi and G. Reger, "Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning", Proceedings of IEEE Cyber Science 2020
+> A. A. Alghamdi and G. Reger, "Pattern Extraction for Behaviours of Multi-Stage Threats via Unsupervised Learning," *2020 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)*, Dublin, Ireland, 2020, pp. 1-8, doi: 10.1109/CyberSA49311.2020.9139697
 
 BibTeX entry:
-> WILL BE UPDATED WHEN THE PAPER IS PUBLISHED ON IEEE XPLORE. You may contact me if further details are needed.
-<!-- @article{WILL BE UPDATED WHEN THE PAPER PUBLISHED,  
-    title       = {Pattern Extraction for Behaviours of Multi-StageThreats via Unsupervised Learning},  
-    author      = {A Alghamdi, Ahmed and Reger, Giles},  
-    doi         = {WILL BE UPDATED WHEN THE PAPER PUBLISHED},  
-    url         = {WILL BE UPDATED WHEN THE PAPER PUBLISHED},  
-    year        = 2020,  
-    month       = {June},  
-    pages       = {8},  
-    organization={IEEE},  
-    publisher   = {TextHere},  
-    volume      = {TextHere},  
-    number      = {TextHere},  
-    author      = {TextHere},  
-    journal     = {TextHere}   
-}-->
+> @INPROCEEDINGS{9139697,  
+  author={A. A. {Alghamdi} and G. {Reger}},
+  booktitle={2020 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)},  
+  title={Pattern Extraction for Behaviours of Multi-Stage Threats via Unsupervised Learning}, 
+  year={2020},  
+  pages={1-8},}
+
 
 **Code Developer:** Ahmed Abdulrahman Alghamdi  
 **For queries about the framework, reach out to me at one of the following places:**
