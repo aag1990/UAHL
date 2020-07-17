@@ -9,9 +9,9 @@ As aforementioned, the framework is part of an academic study made by <a href="h
 
 BibTeX entry:
 > @INPROCEEDINGS{9139697,  
-  author={A. A. {Alghamdi} and G. {Reger}},
+  author={A. A. {Alghamdi} and G. {Reger}},  
   booktitle={2020 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)},  
-  title={Pattern Extraction for Behaviours of Multi-Stage Threats via Unsupervised Learning}, 
+  title={Pattern Extraction for Behaviours of Multi-Stage Threats via Unsupervised Learning},  
   year={2020},  
   pages={1-8},}
 
