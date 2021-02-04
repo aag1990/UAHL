@@ -83,8 +83,10 @@ This phase aims to correlate behaviours based on a set of common features that e
 To run the framework, you need to pass the log-files directory. See the following examples:
 
 ``` console
-$ python3 UADF/UADF.py Labelled_SotM34_dataset/*  # Imports all CSV files into the framework
+$ python3 UAHL/UAHL.py Labelled_SotM34_dataset/*
 ```
+
+The above line runs the framework and imports all CSV files exist in the dataset's folder.
 
 ---
 
