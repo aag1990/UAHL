@@ -71,7 +71,8 @@ def main():
     # Results exporting
     if ExportResultsToCSV is True:
         print('\033[1m\n [-] Writing results to CSV files...\033[0m')
-        utils.results_exporting_phase1(orgDF, fileNames, LogFilesDataframes, LabelsEventType, LabelsIPpairID, Step1SelectedFeatures, Phase1DataScaling, P1_EpsList, 2, P1_EPS_ProcessDuration, P1_ClusProcessDuration, P1_pred_labels_lists, P1_hom_com_vmet_List, P1_AR_Score_List, P1_AMI_Score_List, P1_clusters_details_List, P1_outliers_details_List, P1_CM_List, sys.argv[0])
+        utils.results_exporting_phase1(orgDF, fileNames, LogFilesDataframes, LabelsEventType, LabelsIPpairID, Step1SelectedFeatures, Phase1DataScaling, P1_EpsList, 2, P1_EPS_ProcessDuration,
+                                       P1_ClusProcessDuration, P1_pred_labels_lists, P1_hom_com_vmet_List, P1_AR_Score_List, P1_AMI_Score_List, P1_clusters_details_List, P1_outliers_details_List, P1_CM_List, __file__)
 
     print('\033[1m\n # Phase 2 - Patterns extraction over the analysed log-files:\033[0m')
 
@@ -101,7 +102,8 @@ def main():
     # Results exporting
     if ExportResultsToCSV is True:
         print('\033[1m\n [-] Writing the CCL results to a CSV file...\033[0m')
-        utils.results_exporting_P2(CCL, Phase2selectedFeatures, P2_EpsList, 2, P2_EPS_ProcessDuration, P2_ClusProcessDuration, P2_pred_labels_lists, P2_hom_com_vmet, P2_AR_Score, P2_AMI_Score, P2_clusters_details, P2_outliers_details, sys.argv[0])
+        utils.results_exporting_P2(CCL, Phase2selectedFeatures, P2_EpsList, 2, P2_EPS_ProcessDuration, P2_ClusProcessDuration,
+                                   P2_pred_labels_lists, P2_hom_com_vmet, P2_AR_Score, P2_AMI_Score, P2_clusters_details, P2_outliers_details, __file__)
 
 # Runs the script
 if __name__ == '__main__':

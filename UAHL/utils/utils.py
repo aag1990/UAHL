@@ -68,7 +68,7 @@ def DateTimeConversion(LogFilesDataframes, orgDF):
 def IP_addrs_formating(LogFilesDataframes, orgDF):
     start_time = datetime.now()
     for DS in range(len(LogFilesDataframes)):   # (Each dataframe is processed individually)
-        IP_addrs_columns = [i for i in LogFilesDataframes[DS].columns.tolist() if str(i)[-1] is "$"]    # List of IP addresses columns
+        IP_addrs_columns = [i for i in LogFilesDataframes[DS].columns.tolist() if str(i)[-1] == "$"]    # List of IP addresses columns
         for c in IP_addrs_columns:                                                      # Processes columns containing IP addresses
             unique_IP_addrs = LogFilesDataframes[DS][c].unique()                        # Extracts unique IP addresses
             LogFilesDataframes[DS][c] = LogFilesDataframes[DS][c].replace("-", "9000")  # Replaces the "-" values in the column with "9000"
@@ -202,7 +202,7 @@ def parameter_determination(LogFilesDataframes, plot_graph, fileNames):
         # Extracts unique datapoints (this will minimise errors and processing time, also removes the zero slopes)
         dataset = LogFilesDataframes[DS].drop_duplicates()
 
-        if len(dataset) is 1:  # When all datapoints are the same (Duplicated datapoints)
+        if len(dataset) == 1:  # When all datapoints are the same (Duplicated datapoints)
             print(' *| No distances calculated between datapoints (Duplicated datapoints), thus all datapoints will be grouped in one cluster')
             EPS_Values.append(0)
 
@@ -214,7 +214,7 @@ def parameter_determination(LogFilesDataframes, plot_graph, fileNames):
             # Sorts the second column of the distances list (first column is the distance between a point and itself)
             distances = np.sort(distances[:, 1])
 
-            if len(set(distances)) is 1:    # When distances between datapoints are the same (usually when dealing with 0 and 1 data)
+            if len(set(distances)) == 1:    # When distances between datapoints are the same (usually when dealing with 0 and 1 data)
                 print('  *| "{}": All calculated non-zero slopes between the datapoints are the same. EPS is set to {} (distances[0]/2)' .format(fileNames[DS], (distances[0] / 2)))
                 # Returns half of the only value (distance) exists in the distances list (this will separate the clusters correctly)
                 EPS_Values.append(distances[0] / 2)
