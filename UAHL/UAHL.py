@@ -5,7 +5,7 @@
     | - The framework is available at: https://github.com/aag1990/UAHL              |
     |   (Visit the GitHub repository for the documentation and other details)       |
     | - When using any part of this framework for research or industrial            |
-    |    purposes. Please cite our paper which is shown in the GitHub repository.   |
+    |    purposes, please cite our paper which is shown in the GitHub repository.   |
     | - Date: 25 Apr 2020                                                           |
     | ============================================================================= |
 '''

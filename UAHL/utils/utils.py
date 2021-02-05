@@ -5,7 +5,7 @@
     | - The framework is available at: https://github.com/aag1990/UAHL              |
     |   (Visit the GitHub repository for the documentation and other details)       |
     | - When using any part of this framework for research or industrial            |
-    |    purposes. Please cite our paper which is shown in the GitHub repository.   |
+    |    purposes, please cite our paper which is shown in the GitHub repository.   |
     | - Date: 25 Apr 2020                                                           |
     | ============================================================================= |
 '''
@@ -205,7 +205,7 @@ def parameter_determination(LogFilesDataframes, plot_graph, fileNames):
         if len(dataset) == 1:  # When all datapoints are the same (Duplicated datapoints)
             print(' *| No distances calculated between datapoints (Duplicated datapoints), thus all datapoints will be grouped in one cluster')
             EPS_Values.append(0)
-
+            AllProcDuration.append(0)
         else:
             # Extracts distances between datapoints by using KNN
             neigh = NearestNeighbors(n_neighbors=2, algorithm='kd_tree').fit(dataset)   # You could change the algorithm to "brute"
@@ -255,6 +255,7 @@ def dbscan_clustering(LogFilesDataframes, EpsList, MinPts, fileNames):
             print('          All datapoints were grouped into one cluster')
             pred_labels = [0] * len(LogFilesDataframes[DS])
             PredictedLabelsList.append(list(pred_labels))   # Appends results
+            AllProcDuration.append(0)
         else:
             # Applies the DBSCAN only when Eps is a valid value (>0.0)
             dbscan = DBSCAN(eps=EpsList[DS], min_samples=MinPts, metric="euclidean")
