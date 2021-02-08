@@ -55,99 +55,99 @@ Technical description reports <a href="../Analysis_reports/" target="_blank">`[C
 ## Details of the labels used for each log-file:
 
 - **HTTP_Access file:**
-	-	AA: Failed access attempt to Files/Paths (status code: 404)
-	-	AB: Failed access attempt to Files/Paths (status code: 400)
-	-	AC: Failed "POST" requests (status code 404)
-  	-	AD: CONNECT requests (status code 405)
-	-	AE: Forbidden access attempt to the root directory
-	-	AF: Forbidden access attempt to websites
-	-	AG: Forbidden access attempt to other paths/files
-	-	AH: Proxy request (status code: 404)
-	-	AI: OPTIONS Scan (status code 200)
-	-	AJ: Scan for vulnerable PHP scripts (status code: 404)
-	-	AK: Scan for vulnerable PHP scripts (status code: 200)
-	-	AL: Scan for vulnerable PHP scripts (status code: 500)
+	-	A01: Failed access attempt to Files/Paths (status code: 404)
+	-	A02: Failed access attempt to Files/Paths (status code: 400)
+	-	A03: Failed "POST" requests (status code 404)
+	-	A04: CONNECT requests (status code 405)
+	-	A05: Forbidden access attempt to the root directory
+	-	A06: Forbidden access attempt to websites
+	-	A07: Forbidden access attempt to other paths/files
+	-	A08: Proxy request (status code: 404)
+	-	A09: OPTIONS Scan (status code 200)
+	-	A10: Scan for vulnerable PHP scripts (status code: 404)
+	-	A11: Scan for vulnerable PHP scripts (status code: 200)
+	-	A12: Scan for vulnerable PHP scripts (status code: 500)
 
 
 - **HTTP_Error_Log file:**
-	-	BA: File/directory does not exist
-	-	BB: Directory index forbidden by rule
-	-	BC: Script not found or unable to stat
-	-	BD: attempt to invoke directory as script
-	-	BE: Attempt to serve directory
-	-	BF: Request without hostname
-	-	BG: sh connection errors (No such file or directory/no job control)
-	-	BH: The timeout specified has expired
-	-	BI: Broken pipe
-	-	BJ: Errors/Messages while connections
-	-	BK: System messages (notice: Apache server messages)
-	-	BL: System messages (warn: Child process still did not exit)
+	-	B01: File/directory does not exist
+	-	B02: Directory index forbidden by rule
+	-	B03: Script not found or unable to stat
+	-	B04: Attempt to invoke directory as script
+	-	B05: Attempt to serve directory
+	-	B06: Request without hostname
+	-	B07: sh connection errors (No such file or directory/no job control)
+	-	B08: The timeout specified has expired
+	-	B09: Broken pipe
+	-	B10: Errors/Messages while connections
+	-	B11: System messages (notice: Apache server messages)
+	-	B12: System messages (warn: Child process still did not exit)
 
 
 - **HTTP_SSL_Error_Log file:**
-	-	CA: SSL handshake failed/interrupted
-	-	CB: Spurious SSL handshake interrupt
-	-	CC: SSL Library Error
-	-	CD: System messages (includes RSA_server_certificate messages)
+	-	C01: SSL handshake failed/interrupted
+	-	C02: Spurious SSL handshake interrupt
+	-	C03: SSL Library Error
+	-	C04: System messages (including RSA_server_certificate messages)
 
 
 - **Syslog_Messages file:**
-	-	DA: Message repeated
-	-	DB: Failed SSH login
-	-	DC: CUPS messages (CUPS is the Common UNIX Print System) 
-	-	DD: Syslog messages (syslog & syslogd & syslogd 1.4.1)
-	-	DE: HTTP messages (Apache Server)
-	-	DF: rpc.statd messages
-	-	DG: kernel messages (including all subprocesses activated during the Kernel processes)
-	-	DH: Xinetd messages
-	-	DI: Session opened/closed (su daemon)
-	-	DJ: Session opened/closed (sshd daemon)
-	-	DK: Session opened/closed (login daemon)
+	-	D01: Message repeated
+	-	D02: Failed SSH login
+	-	D03: CUPS messages (CUPS is the Common UNIX Print System)
+	-	D04: Syslog messages (syslog & syslogd & syslogd 1.4.1)
+	-	D05: HTTP messages (Apache Server)
+	-	D06: rpc.statd messages
+	-	D07: kernel messages (including all subprocesses activated during the Kernel processes)
+	-	D08: Xinetd messages
+	-	D09: Session opened/closed (su daemon)
+	-	D10: Session opened/closed (sshd daemon)
+	-	D11: Session opened/closed (login daemon)
 
 
 - **Syslog_Secure file:**
-	-	EA: Accepted password
-	-	EB: Illegal user
-	-	EC: Failed password
-	-	ED: Did not receive identification string
-	-	EE: Scanned
-	-	EF: Xinetd messages
+	-	E01: Accepted password
+	-	E02: Illegal user
+	-	E03: Failed password
+	-	E04: Did not receive identification string
+	-	E05: Scanned
+	-	E06: Xinetd messages
 
 
 - **Syslog_Maillog file:**
-	-	FA: Sent mails
-	-	FB: Message accepted for delivery
-	-	FC: Connection related messages (Alert: Did not issue MAIL/EXPN/VRFY/ETRN during connection to MTA)
-	-	FD: Connection related messages (rejecting/lost connections)
-	-	FE: Connection related messages (pop3 service messages)
-	-	FF: Connection related messages (Other server messages)
-	-	FG: Repeated messages
+	-	F01: Sent mails
+	-	F02: Message accepted for delivery
+	-	F03: Connection related messages (Alert: Did not issue MAIL/EXPN/VRFY/ETRN during connection to MTA)
+	-	F04: Connection related messages (rejecting/lost connections)
+	-	F05: Connection related messages (pop3 service messages)
+	-	F06: Connection related messages (Other server messages)
+	-	F07: Repeated messages
 
 
 - **Snortlog file:**
-  - GA: Spade: Closed dest port used
-  - GB: Spade: Source used odd dest port
-  - GC: Potential Corporate Privacy Violation
-  - GD: Web Application Attack
-  - GE: Access to a potentially vulnerable web application
-  - GF: An attempted login using a suspicious username was detected
-  - GG: Potentially Bad Traffic
-  - GH: A Network Trojan was detected
-  - GI: Detection messages (spp_stream4)
-  - GJ: Attempted Information Leak - Automated NMAP TCP scan
-  - GK: Attempted Information Leak - NMAP ICMP PING
-  - GL: Attempted Information Leak - WEB-MISC http directory traversal
-  - GM: Attempted Information Leak - DOUBLE DECODING ATTACK
-  - GN: Attempted Information Leak - DNS named version attempt
-  - GO: Executable code was detected (SHELLCODE x86 NOOP)
-  - GP: Executable code was detected (BARE BYTE UNICODE ENCODING)
-  - GQ: Detection of a Network Scan
-  - GR: Decode of an RPC Query (UDP connection)
-  - GS: Decode of an RPC Query (TCP connection)
-  - GT: Email server errors
-  - GU: Attempted Administrator Privilege Gain (UDP connection)
-  - GV: Attempted Administrator Privilege Gain (TCP connection)
-  - GW: ICMP Pings messages
-  - GX: Attempted Denial of Service
-  - GY: MS-SQL Worm alerts
-  - GZ: Snort_decoder warning messages
+	-	G01: Spade: Closed dest port used
+	-	G02: Spade: Source used odd dest port
+	-	G03: Potential Corporate Privacy Violation
+	-	G04: Web Application Attack
+	-	G05: Access to a potentially vulnerable web application
+	-	G06: An attempted login using a suspicious username was detected
+	-	G07: Potentially Bad Traffic
+	-	G08: A Network Trojan was detected
+	-	G09: Detection messages (spp_stream4)
+	-	G10: Attempted Information Leak - Automated NMAP TCP scan
+	-	G11: Attempted Information Leak - NMAP ICMP PING
+	-	G12: Attempted Information Leak - WEB-MISC http directory traversal
+	-	G13: Attempted Information Leak - DOUBLE DECODING ATTACK
+	-	G14: Attempted Information Leak - DNS named version attempt
+	-	G15: Executable code was detected (SHELLCODE x86 NOOP)
+	-	G16: Executable code was detected (BARE BYTE UNICODE ENCODING)
+	-	G17: Detection of a Network Scan
+	-	G18: Decode of an RPC Query (UDP connection)
+	-	G19: Decode of an RPC Query (TCP connection)
+	-	G20: Email server errors
+	-	G21: Attempted Administrator Privilege Gain (UDP connection)
+	-	G22: Attempted Administrator Privilege Gain (TCP connection)
+	-	G23: ICMP Pings messages
+	-	G24: Attempted Denial of Service
+	-	G25: MS-SQL Worm alerts
+	-	G26: Snort_decoder warning messages
