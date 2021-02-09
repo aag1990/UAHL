@@ -10,7 +10,6 @@
     | ============================================================================= |
 '''
 import sys
-import os
 import utils.utils as utils
 
 Step1SelectedFeatures = True            # Pre-processing options: Using the selected feature sets

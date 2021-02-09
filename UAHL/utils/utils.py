@@ -307,7 +307,7 @@ def results_evaluation_phase1(fileNames, actual_labelsList, predicted_labelsList
         else:
             outliers_details = ""
 
-        actual_vs_predicted_labels_df['predicted_labels'] = actual_vs_predicted_labels_df['predicted_labels'].map(clusters_MV_labels)  # pred. labels replaced with the MV
+        actual_vs_predicted_labels_df['predicted_labels'] = actual_vs_predicted_labels_df['predicted_labels'].map(clusters_MV_labels)  # pred. labels replaced with the MV (for results' evaluation!)
 
         # Calculates homogeneity, completeness, Vmeasure, AR, and AMI scores
         warnings.filterwarnings('ignore')   # Ignores warning messages generated when there are labels in the actual labels list, but not shown in the "predicted_labels" list. The sklearn would handle this by replacing them with 0. THIS WOULD NOT CHANGE THE RESULTS. Howewer, we wanted to hide the warning message on the screen.
@@ -336,7 +336,7 @@ def results_evaluation_phase1(fileNames, actual_labelsList, predicted_labelsList
 
 
 def conf_matrix_print(actual_labels, predicted_labels):
-    predicted_labels = [(''.join([i for i in d if not i.isdigit()])) for d in predicted_labels]
+    predicted_labels = [i[:3] for i in predicted_labels]    # Removes the cluster number from the MV label. This will allow compatibility with the actual labels
     SortedUniqueLabelsList = sorted(set(actual_labels))                                                     # Extracts unique label names
     conf_matrix = confusion_matrix(actual_labels, predicted_labels, labels=SortedUniqueLabelsList).tolist() # Builds the confusion matrix
 
@@ -366,7 +366,7 @@ def conf_matrix_print(actual_labels, predicted_labels):
     column_names = ['      '] + SortedUniqueLabelsList     # Sets the second row of the table, which includes the predicted labels
     x.add_column(column_names[0], SortedUniqueLabelsList)  # Adds actual_labels columns
     for c in range(len(SortedUniqueLabelsList)): x.add_column(column_names[c + 1], [item[c] for item in conf_matrix])  # Adds results to CM
-    full_table = str(TableHeader) + "       "  + (str(x).replace("\n", "\n       "))    # The table header & The confusion matrix table
+    full_table = str(TableHeader) + "       "  + (str(x).replace("\n", "\n       "))    # Joins the table header & the confusion matrix table
     return full_table
 
 
